@@ -21,9 +21,10 @@ For now only PDFs are accepted but I may implement support for EPUB.
 1. **Classify text blocks**
     
     ```bash
-    python classify.py
+    python classify.py <input> classified_text.json
     ```
     
+    - opens the json file from `input`, should be the output from the previous step.
     - Uses **Jenks natural breaks** to classify text as:
         - `header` (titles),
         - `body` (main content),
