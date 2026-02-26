@@ -1,8 +1,9 @@
 import json
 import jenkspy
+import sys
 
-INPUT_JSON = "vision_output.json"
-OUTPUT_JSON = "classified_text.json"
+INPUT_JSON = sys.argv[1] # i.e. "vision_output.json"
+OUTPUT_JSON = sys.argv[2] # i.e. "classified_text.json"
 
 def classify_font_sizes(data, n_classes=4):
     # We use the avg_font_size instead of font_height
