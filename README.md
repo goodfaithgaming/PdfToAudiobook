@@ -13,11 +13,11 @@ For now only PDFs are accepted but I may implement support for EPUB.
 
 1. **Extract text from the PDF**
    ```bash
-   python extract_text.py
+   python extract_text.py <input> <output>
    ```
 
-- The script opens `book.pdf` (the PDF must have this name).
-- It generates a file `vision_output.json` containing the text blocks and their font sizes.
+- The script opens the file specified in the `input` argument (e.g. `book.pdf`)
+- It generates a json file as specified in the `output` argument (e.g. `vision_output.json`)
 1. **Classify text blocks**
     
     ```bash
