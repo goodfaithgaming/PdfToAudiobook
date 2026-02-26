@@ -69,7 +69,7 @@ You’ll need these libraries and tools installed:
 
 ## ⚠️ Notes
 
-- The input PDF must be named **`book.pdf`** and placed in the project folder.
+- The input PDF must be placed in the project folder.
 - For now the pipeline is very **basic and experimental**. If you don’t mind tweaking some code, you can adjust things like:
     - The page ranges to process.
     - The thresholds for text classification.
