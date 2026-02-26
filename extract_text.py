@@ -1,8 +1,9 @@
 import fitz
 import json
+import sys
 
-PDF_PATH = "book.pdf"
-OUTPUT_JSON = "vision_output.json"
+PDF_PATH = sys.argv[1]
+OUTPUT_JSON = sys.argv[2]
 # Ignore text if belowe this font size
 MIN_FONT_SIZE = 2
 
