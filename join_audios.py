@@ -2,10 +2,11 @@ from pydub import AudioSegment
 from pathlib import Path
 import subprocess
 import os
+import sys
 
 # 📁 Folder where the chunks are
 TEMP_FOLDER = "temp"
-OUTPUT_MP3 = "audiobook.mp3"
+OUTPUT_MP3 = sys.argv[1]
 LIST_FILE = "file_list.txt"
 
 def join_wavs_to_mp3(temp_folder, output_file):
